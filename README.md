@@ -1,2 +1,1 @@
 # shabbirAlam.github.io
-Shabbir
