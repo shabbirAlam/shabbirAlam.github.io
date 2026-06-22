@@ -1,234 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-
-    <!-- Font Awesome for WhatsApp Icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-        }
-
-        body {
-            background: #0f172a;
-            color: #fff;
-            line-height: 1.6;
-        }
-
-        /* Navbar */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 10%;
-            position: sticky;
-            top: 0;
-            background: rgba(15, 23, 42, 0.9);
-            backdrop-filter: blur(10px);
-        }
-
-        header h1 {
-            font-size: 22px;
-        }
-
-        nav a {
-            color: #fff;
-            margin-left: 20px;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        nav a:hover {
-            color: #38bdf8;
-        }
-
-        /* Hero Section */
-        .hero {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 90vh;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .hero h2 {
-            font-size: 40px;
-        }
-
-        .hero span {
-            color: #38bdf8;
-        }
-
-        .hero p {
-            margin-top: 10px;
-            max-width: 500px;
-        }
-
-        .hero button {
-            margin-top: 20px;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 8px;
-            background: #38bdf8;
-            color: #000;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        /* Sections */
-        section {
-            padding: 60px 10%;
-        }
-
-        h3 {
-            margin-bottom: 20px;
-            font-size: 26px;
-        }
-
-        /* Projects */
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 12px;
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        /* Contact */
-        .contact {
-            text-align: center;
-        }
-
-        .contact a {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 12px 20px;
-            background: #25D366;
-            color: white;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* Floating WhatsApp Button */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #25D366;
-            color: white;
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 26px;
-            text-decoration: none;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-            transition: 0.3s;
-        }
-
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h2 {
-                font-size: 28px;
-            }
-
-            header {
-                padding: 15px 5%;
-            }
-
-            nav a {
-                margin-left: 10px;
-                font-size: 12px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Md Shabbir Alam — iOS Engineer</title>
+  <meta name="description" content="Senior iOS Engineer with 8+ years of experience delivering scalable, high-performance iOS applications using Swift, SwiftUI, and Clean Architecture.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<header>
-    <h1>My Portfolio</h1>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<section class="hero">
-    <h2>Hi, I'm <span>Md Shabbir Alam</span></h2>
-    <p>iOS Developer | Swift | MVVM | Clean Architecture</p>
-
-    <button onclick="window.open('https://wa.me/919038474524?text=Hi%20I%20want%20to%20connect','_blank')">
-        Contact Me
-    </button>
-</section>
-
-<section id="about">
-    <h3>About Me</h3>
-    <p>
-        I build scalable iOS apps using modern Swift, Combine, and clean architecture.
-        Passionate about performance, UI/UX, and maintainable code.
-    </p>
-</section>
-
-<section id="projects">
-    <h3>Projects</h3>
-    <div class="projects">
-        <div class="card">
-            <h4>Project One</h4>
-            <p>SwiftUI app with API integration.</p>
-        </div>
-        <div class="card">
-            <h4>Project Two</h4>
-            <p>MVVM + Combine architecture.</p>
-        </div>
-        <div class="card">
-            <h4>Project Three</h4>
-            <p>Clean Architecture with unit tests.</p>
-        </div>
-    </div>
-</section>
-
-<section id="contact" class="contact">
-    <h3>Contact Me</h3>
-    <p>Let’s connect and build something great.</p>
-
-    <a href="https://wa.me/919038474524?text=Hello%20I%20want%20to%20connect" target="_blank">
-        Chat on WhatsApp
+  <!-- Navbar -->
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="#home" class="nav-logo">
+      <span class="nav-logo-icon">SA</span>
+      <span class="nav-logo-text">Shabbir</span>
     </a>
-</section>
+    <button class="nav-hamburger" aria-label="Toggle menu" onclick="this.nextElementSibling.classList.toggle('open')">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-<!-- Floating WhatsApp Icon Button -->
-<a class="whatsapp-float" href="https://wa.me/919038474524?text=Hi%20there" target="_blank">
+  <!-- Hero -->
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge">Open to opportunities</div>
+      <h1>Hi, I'm <span>Md Shabbir Alam</span></h1>
+      <p>Senior iOS Engineer with 8+ years of experience building high-performance, scalable applications used by millions.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fas fa-arrow-down"></i> Get in touch
+        </a>
+        <a href="#experience" class="btn btn-secondary">
+          <i class="fas fa-briefcase"></i> My experience
+        </a>
+        <a href="https://wa.me/919038474524?text=Hi%20Shabbir%2C%20I%20saw%20your%20portfolio" target="_blank" class="btn btn-whatsapp" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><strong>8+</strong><span>Years Exp.</span></div>
+        <div class="hero-stat"><strong>5+</strong><span>Apps Shipped</span></div>
+        <div class="hero-stat"><strong>Swift</strong><span>Primary Stack</span></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <span class="section-label">About me</span>
+          <h2 class="section-title">Building iOS experiences that matter</h2>
+          <p>
+            I'm a results-driven <strong>Senior iOS Engineer</strong> based in Bengaluru with deep expertise in
+            <strong>Swift, SwiftUI, UIKit, and Clean Architecture (MVVM)</strong>. I specialize in building
+            scalable, secure, high-performance iOS applications for enterprise and consumer platforms.
+          </p>
+          <p>
+            Throughout my career — from startups to HSBC, Fiserv, and ANAROCK — I've led end-to-end feature
+            delivery, optimized app performance, mentored teams, and championed code quality. I care deeply
+            about crafting maintainable architectures that stand the test of time.
+          </p>
+        </div>
+        <div class="about-highlights reveal">
+          <div class="highlight-card">
+            <i class="fas fa-code"></i>
+            <h4>Clean Architecture</h4>
+            <p>MVVM, VIPER, MVI &amp; SOLID principles</p>
+          </div>
+          <div class="highlight-card">
+            <i class="fas fa-rocket"></i>
+            <h4>Performance</h4>
+            <p>Instruments, memory optimization</p>
+          </div>
+          <div class="highlight-card">
+            <i class="fas fa-shield"></i>
+            <h4>Security</h4>
+            <p>Biometric auth, secure APIs, Keychain</p>
+          </div>
+          <div class="highlight-card">
+            <i class="fas fa-users"></i>
+            <h4>Leadership</h4>
+            <p>Mentoring, code reviews, delivery</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Expertise</span>
+        <h2 class="section-title">Technical skills</h2>
+        <p class="section-desc">A broad toolkit built over 8+ years of shipping production iOS apps.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <h4><i class="fas fa-code"></i> Languages &amp; Frameworks</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Swift</span>
+            <span class="skill-tag">SwiftUI</span>
+            <span class="skill-tag">UIKit</span>
+            <span class="skill-tag">Objective-C</span>
+            <span class="skill-tag">Combine</span>
+            <span class="skill-tag">AVFoundation</span>
+            <span class="skill-tag">CoreLocation</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h4><i class="fas fa-cubes"></i> Architecture &amp; Patterns</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">MVVM</span>
+            <span class="skill-tag">VIPER</span>
+            <span class="skill-tag">MVI</span>
+            <span class="skill-tag">Clean Architecture</span>
+            <span class="skill-tag">Dependency Injection</span>
+            <span class="skill-tag">Modular Architecture</span>
+            <span class="skill-tag">SOLID Principles</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h4><i class="fas fa-plug"></i> APIs &amp; Integrations</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">RESTful APIs</span>
+            <span class="skill-tag">GraphQL</span>
+            <span class="skill-tag">Secure API Integration</span>
+            <span class="skill-tag">Firebase Crashlytics</span>
+            <span class="skill-tag">Firebase Analytics</span>
+            <span class="skill-tag">Push Notifications</span>
+            <span class="skill-tag">Remote Config</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h4><i class="fas fa-tachometer-alt"></i> Concurrency &amp; Performance</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">async/await</span>
+            <span class="skill-tag">Task Groups</span>
+            <span class="skill-tag">Actors</span>
+            <span class="skill-tag">Memory Management</span>
+            <span class="skill-tag">Performance Optimization</span>
+            <span class="skill-tag">Instruments</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h4><i class="fas fa-tools"></i> Dev &amp; CI/CD</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Xcode</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Fastlane</span>
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">Jenkins</span>
+            <span class="skill-tag">App Store Deployment</span>
+            <span class="skill-tag">TestFlight</span>
+            <span class="skill-tag">SPM</span>
+            <span class="skill-tag">CocoaPods</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h4><i class="fas fa-vial"></i> Testing &amp; Data</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Unit Testing</span>
+            <span class="skill-tag">UI Testing</span>
+            <span class="skill-tag">Snapshot Testing</span>
+            <span class="skill-tag">CoreData</span>
+            <span class="skill-tag">Realm</span>
+            <span class="skill-tag">Keychain</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Career</span>
+        <h2 class="section-title">Professional experience</h2>
+        <p class="section-desc">A track record of delivering impact across fintech, real estate, healthcare, fitness, and enterprise mobile products.</p>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Oct 2023 – Present</div>
+          <h3 class="timeline-company">ANAROCK Group</h3>
+          <p class="timeline-role">Senior Software Engineer — Bengaluru</p>
+          <ul class="timeline-details">
+            <li>Led iOS development for BELONG by MAF, a large-scale SwiftUI application, improving performance and scalability.</li>
+            <li>Architected MVVM-based Clean Architecture with reusable service layers, reducing technical debt.</li>
+            <li>Optimized performance and resolved memory leaks using Instruments.</li>
+            <li>Integrated RESTful APIs and enhanced UI/UX with SwiftUI.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Dec 2022 – Sep 2023</div>
+          <h3 class="timeline-company">Infinite Computer Solutions</h3>
+          <p class="timeline-role">Technical Lead — Bengaluru</p>
+          <ul class="timeline-details">
+            <li>Led Dollar Bank mobile app development, focusing on secure architecture and team productivity.</li>
+            <li>Managed delivery timelines and cross-functional collaboration during post-acquisition integration.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Aug 2021 – Dec 2022</div>
+          <h3 class="timeline-company">Fiserv India Private Ltd</h3>
+          <p class="timeline-role">Professional, Software Development Engineering</p>
+          <ul class="timeline-details">
+            <li>Led Dollar Bank mobile app development using Swift and Objective-C with secure, scalable architecture.</li>
+            <li>Designed biometric authentication and mobile check deposit features, improving trust and compliance.</li>
+            <li>Conducted code reviews, enforced coding standards, and mentored developers.</li>
+            <li>Collaborated cross-functionally to deliver high-quality releases on tight timelines.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Jun 2019 – Aug 2021</div>
+          <h3 class="timeline-company">HSBC Software Development Pvt Ltd</h3>
+          <p class="timeline-role">Software Engineer</p>
+          <ul class="timeline-details">
+            <li>Contributed to the WealthDashboard framework using Swift, enabling reuse across enterprise banking apps.</li>
+            <li>Designed modular, reusable components, improving development efficiency and reducing duplication.</li>
+            <li>Focused on performance optimization, security enhancements, and scalable architecture.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Dec 2017 – May 2019</div>
+          <h3 class="timeline-company">AQB Solutions Pvt Ltd</h3>
+          <p class="timeline-role">Associate Software Consultant</p>
+          <ul class="timeline-details">
+            <li>Developed AshyBines Squad iOS app using Objective-C with video streaming and workout tracking.</li>
+            <li>Implemented scalable content delivery and media handling, improving user engagement.</li>
+            <li>Maintained clean, reusable code and collaborated on timely feature delivery.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Education</span>
+        <h2 class="section-title">Academic background</h2>
+        <p class="section-desc">A strong foundation in computer science and engineering.</p>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <h4>B.Tech in Computer Science Engineering</h4>
+          <p class="edu-meta">M.A.K.A.U.T — 2014 – 2018</p>
+          <p class="edu-score">CGPA: 7.95</p>
+        </div>
+        <div class="edu-card reveal">
+          <h4>Class XII</h4>
+          <p class="edu-meta">J.N.V — 2011 – 2013</p>
+          <p class="edu-score">Percentage: 82.6%</p>
+        </div>
+        <div class="edu-card reveal">
+          <h4>Class X</h4>
+          <p class="edu-meta">N.S.D.A.V Public School — 2010 – 2011</p>
+          <p class="edu-score">CGPA: 8.8</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-section reveal">
+        <span class="section-label">Connect</span>
+        <h3>Let's build something great</h3>
+        <p>Available for full-time roles, freelance projects, and technical collaborations. Reach out anytime.</p>
+        <div class="contact-links">
+          <a href="mailto:mdshabbiralam007@gmail.com" class="btn btn-primary">
+            <i class="fas fa-envelope"></i> mdshabbiralam007@gmail.com
+          </a>
+          <a href="tel:+919038474524" class="btn btn-secondary">
+            <i class="fas fa-phone"></i> +91 9038474524
+          </a>
+          <a href="https://wa.me/919038474524?text=Hi%20Shabbir%2C%20I%20saw%20your%20portfolio" target="_blank" class="btn btn-whatsapp" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Float -->
+  <a class="whatsapp-float" href="https://wa.me/919038474524?text=Hi%20Shabbir%2C%20I%20saw%20your%20portfolio" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
-</a>
+  </a>
 
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Md Shabbir Alam. Built with Swift thinking &amp; HTML.</p>
+  </footer>
+
+  <script>
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Close mobile nav on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.remove('open');
+      });
+    });
+  </script>
 </body>
 </html>
-```
