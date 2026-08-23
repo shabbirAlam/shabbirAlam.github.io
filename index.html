@@ -13,25 +13,42 @@
   <!-- Navbar -->
   <nav role="navigation" aria-label="Main navigation">
     <a href="#home" class="nav-logo">
-      <span class="nav-logo-icon">SA</span>
+      <span class="nav-logo-icon">
+        <img src="resources/profile-picture.jpg" alt="Md Shabbir Alam">
+      </span>
       <span class="nav-logo-text">Shabbir</span>
     </a>
     <button class="nav-hamburger" aria-label="Toggle menu" onclick="this.nextElementSibling.classList.toggle('open')">
       <i class="fas fa-bars"></i>
     </button>
     <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-      <a href="#resume" class="resume-link" target="_blank" rel="noopener">Resume</a>
+      <div class="nav-main-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="https://github.com/shabbirAlam" class="nav-icon-link" target="_blank" rel="noopener" aria-label="GitHub profile" title="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/md-shabbir-alam" class="nav-icon-link" target="_blank" rel="noopener" aria-label="LinkedIn profile" title="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="#resume" class="resume-link nav-resume" target="_blank" rel="noopener">
+          <i class="fas fa-file-lines"></i> Resume
+        </a>
+      </div>
     </div>
   </nav>
 
   <!-- Hero -->
   <header class="hero" id="home">
     <div class="hero-content">
+      <div class="hero-profile-frame">
+        <img src="resources/profile-picture.jpg" alt="Portrait of Md Shabbir Alam">
+      </div>
       <div class="hero-badge">Open to opportunities</div>
       <h1>Hi, I'm <span>Md Shabbir Alam</span></h1>
       <p>Senior iOS Engineer with 8+ years of experience building high-performance, scalable applications used by millions.</p>
