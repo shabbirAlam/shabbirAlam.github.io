@@ -25,6 +25,7 @@
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
       <a href="#contact">Contact</a>
+      <a href="#resume" class="resume-link" target="_blank" rel="noopener">Resume</a>
     </div>
   </nav>
 
@@ -40,6 +41,9 @@
         </a>
         <a href="#experience" class="btn btn-secondary">
           <i class="fas fa-briefcase"></i> My experience
+        </a>
+        <a href="#resume" class="resume-link btn btn-secondary" target="_blank" rel="noopener">
+          <i class="fas fa-file-lines"></i> View Resume
         </a>
         <a href="https://wa.me/919038474524?text=Hi%20Shabbir%2C%20I%20saw%20your%20portfolio" target="_blank" class="btn btn-whatsapp" rel="noopener">
           <i class="fa-brands fa-whatsapp"></i> WhatsApp
@@ -313,6 +317,11 @@
   </footer>
 
   <script>
+    const resumePdfLink = 'https://drive.google.com/file/d/1rTstwIoPl4iUYutmGywAIr59qpERarwn/view?usp=drive_link';
+    document.querySelectorAll('.resume-link').forEach(link => {
+      link.href = resumePdfLink;
+    });
+
     // Scroll reveal
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
