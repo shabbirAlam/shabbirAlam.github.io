@@ -1,48 +1,32 @@
-# AGENTS.md — shabbirAlam.github.io
+# AGENTS.md - shabbirAlam.github.io
 
-## What this is
+## Scope
 
-A single-page static portfolio site deployed on **GitHub Pages** (user site). No build tools, no frameworks, no dependencies — just `index.html` + `styles.css` + inline JS.
+This file contains instructions for AI coding agents working on this static GitHub Pages portfolio. For the project overview and repository layout, see [README.md](README.md).
+
+## Project constraints
+
+- There is no build step, framework, package manager, test runner, linter, or formatter.
+- The site is served directly from the repository root.
+- External Google Fonts and Font Awesome 6.5.0 CDN assets require network access in the browser.
+
+## Editing rules
+
+- Edit `index.html` for page content, links, navigation, and inline JavaScript.
+- Edit `styles.css` for theme, layout, responsive rules, and animations.
+- Preserve the relative path and filename casing of `resources/profile-picture.jpg`.
+- Resume links start as `#resume` placeholders and are assigned a Google Drive URL by inline JavaScript.
+- Preserve the hamburger menu's `.open` class behavior and the `IntersectionObserver` scroll-reveal behavior when changing related markup or scripts.
+- Preserve accessible image alt text and `rel="noopener"` on external links.
+
+## Validation
+
+1. Open `index.html` directly in a browser with `open index.html`.
+2. Check desktop and narrow/mobile layouts.
+3. Verify navigation anchors, image loading, resume, email, phone, social, and WhatsApp links.
 
 ## Deployment
 
-- Push to `main` → auto-deploys to `https://shabbirAlam.github.io`.
-- No build/CI step. `index.html` is served directly from the repo root.
-- GitHub Pages user site: the repo name must match `<username>.github.io`.
+When GitHub Pages is configured to publish from `main`, pushing changes deploys the site automatically. Keep the repository name as `<username>.github.io` for a user site.
 
-## Development workflow
-
-1. Edit `index.html` or `styles.css`.
-2. Open `index.html` directly in a browser to preview (no dev server needed).
-3. Commit and push to `main`.
-
-No `npm`, `yarn`, `package.json`, test runner, linter, or formatter exists.
-
-## Quick commands
-
-```bash
-# Preview locally
-open index.html
-
-# Deploy
-git add index.html styles.css && git commit -m "..." && git push
-```
-
-## Structure
-
-```
-index.html   # HTML + inline JS (scroll-reveal, mobile nav toggle)
-styles.css   # all styles (dark theme, responsive, animations)
-README.md    # placeholder
-AGENTS.md    # this file
-```
-
-## Notes
-
-- Using Font Awesome 6.5.0 via CDN for icons.
-- Dark theme with CSS custom properties (`--bg-primary`, `--accent`, etc.) — all theming lives in `:root` in `styles.css`.
-- Scroll-triggered reveal animations via `IntersectionObserver` (inline `<script>` at bottom of `index.html`).
-- Mobile nav uses inline `onclick` toggle + event listener for link close.
-- WhatsApp contact number: +91 9038474524 (hardcoded in hero buttons, contact section, and floating button).
-- Contact email: `mdshabbiralam007@gmail.com`.
-- All content (hero, about, skills, experience timeline, education, contact) is in the single HTML file.
+Do not commit or push unless explicitly requested. Do not add build tooling or dependencies unless the project requirements change.
