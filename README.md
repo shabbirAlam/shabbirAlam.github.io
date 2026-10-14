@@ -1,6 +1,6 @@
 # shabbirAlam.github.io
 
-Personal portfolio of **Md Shabbir Alam**, a Senior iOS Engineer based in Bengaluru.
+Personal portfolio of **Md Shabbir Alam**, a Staff iOS Engineer based in Bengaluru.
 
 **Live site:** [shabbirAlam.github.io](https://shabbirAlam.github.io)
 
@@ -8,7 +8,7 @@ Personal portfolio of **Md Shabbir Alam**, a Senior iOS Engineer based in Bengal
 
 The portfolio presents Shabbir's experience building production iOS applications with Swift, SwiftUI, UIKit, Clean Architecture, concurrency, performance optimization, and secure integrations. It includes:
 
-- Professional experience across ANAROCK, Infinite Computer Solutions, Fiserv, HSBC, and AQB Solutions
+- Professional experience across Altimetrik, ANAROCK, Infinite Computer Solutions, Fiserv, HSBC, and AQB Solutions
 - Technical skills covering architecture, APIs, CI/CD, testing, data, and performance
 - Education, contact details, social profiles, WhatsApp, and a resume link
 
