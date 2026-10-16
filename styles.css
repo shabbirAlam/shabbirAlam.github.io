@@ -306,21 +306,40 @@
 
     .hero-stats {
       display: flex;
-      gap: 40px;
+      gap: 20px;
       justify-content: center;
-      margin-top: 48px;
+      margin-top: 52px;
+      flex-wrap: wrap;
+    }
+    .hero-stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      padding: 20px 32px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      min-width: 140px;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+    .hero-stat:hover {
+      transform: translateY(-4px);
+      border-color: rgba(99, 102, 241, 0.4);
     }
     .hero-stat strong {
       display: block;
-      font-size: 28px;
+      font-size: 26px;
       font-weight: 800;
       color: var(--text-primary);
+      white-space: nowrap;
     }
     .hero-stat span {
-      font-size: 13px;
+      font-size: 12px;
       color: var(--text-secondary);
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 1px;
+      font-weight: 500;
     }
 
     /* ─── Section ─── */
